@@ -74,18 +74,19 @@ NavMeshSettings:
     widthInaccuracy: 16.666666
     heightInaccuracy: 10
   m_NavMesh: {fileID: 0}
---- !u!1 &243598087
+--- !u!1 &2070293119
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 243598092}
-  - 20: {fileID: 243598091}
-  - 92: {fileID: 243598090}
-  - 124: {fileID: 243598089}
-  - 81: {fileID: 243598088}
+  - 4: {fileID: 2070293124}
+  - 20: {fileID: 2070293123}
+  - 92: {fileID: 2070293122}
+  - 124: {fileID: 2070293121}
+  - 81: {fileID: 2070293120}
+  - 114: {fileID: 2070293125}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -93,33 +94,33 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &243598088
+--- !u!81 &2070293120
 AudioListener:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 243598087}
+  m_GameObject: {fileID: 2070293119}
   m_Enabled: 1
---- !u!124 &243598089
+--- !u!124 &2070293121
 Behaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 243598087}
+  m_GameObject: {fileID: 2070293119}
   m_Enabled: 1
---- !u!92 &243598090
+--- !u!92 &2070293122
 Behaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 243598087}
+  m_GameObject: {fileID: 2070293119}
   m_Enabled: 1
---- !u!20 &243598091
+--- !u!20 &2070293123
 Camera:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 243598087}
+  m_GameObject: {fileID: 2070293119}
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
@@ -143,26 +144,38 @@ Camera:
   m_TargetTexture: {fileID: 0}
   m_HDR: 0
   m_OcclusionCulling: 1
---- !u!4 &243598092
+--- !u!4 &2070293124
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 243598087}
+  m_GameObject: {fileID: 2070293119}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
---- !u!1 &1434416818
-GameObject:
+--- !u!114 &2070293125
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
+<<<<<<< HEAD:Assets/_Scenes/IntroTest.unity
+  m_GameObject: {fileID: 2070293119}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2eeed89961b5a054e8d8ca9c387b216f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  introText: Hello
+=======
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1434416820}
   - 212: {fileID: 1434416819}
+  - 114: {fileID: 1434416821}
+  - 58: {fileID: 1434416823}
+  - 50: {fileID: 1434416822}
   m_Layer: 0
   m_Name: circle
   m_TagString: Untagged
@@ -204,3 +217,41 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &1434416821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1434416818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fbc122cb40088845bda59d3be36ca82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!50 &1434416822
+Rigidbody2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1434416818}
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: .0500000007
+  m_GravityScale: 0
+  m_FixedAngle: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+--- !u!58 &1434416823
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1434416818}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Radius: .25
+  m_Center: {x: 0, y: 0}
+>>>>>>> 6a00d12d5f4c4e91eced276a429f958e1b64863a:Assets/KitTestScene.unity
