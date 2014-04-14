@@ -21,14 +21,23 @@ public class CameraFollow : MonoBehaviour
 	public float minYpos;
 
 	private float size;
+	public float maxSizeDelta = 0.1f;
 	
 	void LateUpdate()
 	{
 		//camera size
-		float camSize = 10+velocity.magnitude/10;
-		float deltaSize = size-camSize;
-		camSize = Mathf.SmoothDamp(camSize, size, ref deltaSize, 0.1f);
-		//Debug.Log(deltaSize);
+		float currentSize = gameObject.GetComponent<Camera>().orthographicSize;
+		float targetCamSize = 10+velocity.magnitude/10;
+		float deltaSize = targetCamSize-currentSize;
+		float camSize;
+		if(deltaSize<maxSizeDelta&&deltaSize>-maxSizeDelta){
+			camSize = currentSize+deltaSize;
+		}if(deltaSize>0){
+			camSize = currentSize+maxSizeDelta;
+		}else{
+			camSize = currentSize-maxSizeDelta;
+		}
+		Debug.Log(camSize);
 
 		gameObject.GetComponent<Camera>().orthographicSize = camSize;
 
