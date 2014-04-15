@@ -4,16 +4,14 @@ using System.Collections;
 public class Health : MonoBehaviour {
 
 	public float enemyHealth = 100f;
-
-	//void OnCollisionEnter2D(Collider2D other){
-
-		//}
+	
 	void OnTriggerEnter2D(Collider2D other)
 	{
 		if(other.gameObject.tag == "astroids")
 		{
-			Debug.Log("Enemy Hit!");
+			//Debug.Log("Enemy Hit!");
 			TakeDamage(50f);
+			Destroy (other.gameObject);
 		}
 	}
 	void TakeDamage (float dmg)
