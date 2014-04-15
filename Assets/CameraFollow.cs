@@ -37,7 +37,7 @@ public class CameraFollow : MonoBehaviour
 		}else{
 			camSize = currentSize-maxSizeDelta;
 		}
-		Debug.Log(camSize);
+		//Debug.Log(camSize);
 
 		gameObject.GetComponent<Camera>().orthographicSize = camSize;
 
