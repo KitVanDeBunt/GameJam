@@ -21,17 +21,17 @@ public class DistanceJointBuild : MonoBehaviour {
 	private float distence;
 
 	void Start () {
-		SpringJoint2D joint = gameObject.AddComponent<SpringJoint2D>();
+		HingeJoint2D joint = gameObject.AddComponent<HingeJoint2D>();
 
-		joint.frequency = 9;
+		//joint.frequency = 9;
 
-		joint.dampingRatio = 0;
+		//joint.dampingRatio = 0;
 
 		joint.connectedBody = connectedBody;
 
 		joint.collideConnected = false;
 
-		joint.distance = distence;
+		//joint.distance = distence;
 
 		joint.anchor = new Vector2(anchorPoint.localPosition.x
 		                           ,anchorPoint.localPosition.y);
