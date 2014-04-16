@@ -2,17 +2,20 @@
 using System.Collections;
 
 public class Menu : MonoBehaviour {
-	private int xStart = 200;
+	private float native_width = 768;
+	private float native_height = 1280;
+	
+	private int xStart = 768/2-150;
 	private int yStart = -50;
-
+	
 	public Texture startTexture;
 	public GUIStyle style;
-
+	
 	public bool startClick;
 	public Fader fader;
-
+	
 	public Transform explosion;
-
+	
 	void Start () {
 		yStart = 0;
 		fader = GetComponent<Fader> ();
@@ -37,8 +40,11 @@ public class Menu : MonoBehaviour {
 			}
 		}
 	}
-
+	
 	void OnGUI(){
+		float rx = Screen.width / native_width;
+		float ry = Screen.height / native_height;
+		GUI.matrix = Matrix4x4.TRS (new Vector3(0, 0, 0), Quaternion.identity, new Vector3 (rx, ry, 1)); 
 		GUI.skin.button = style;
 		GUILayout.Button ("");
 		GUI.color = new Color(255, 255, 255, 1);
