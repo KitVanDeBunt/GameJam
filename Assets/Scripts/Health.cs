@@ -10,6 +10,9 @@ public class Health : MonoBehaviour {
 	public Sprite art1;
 	public Sprite art2;
 	public Sprite art3;
+	public Sprite art4;
+
+
 	
 	void Start(){
 		gameObject.GetComponent<SpriteRenderer> ().sprite = art1;
@@ -36,6 +39,10 @@ public class Health : MonoBehaviour {
 		if(enemyHealth <= 40)
 		{
 			gameObject.GetComponent<SpriteRenderer> ().sprite = art3;
+		}
+		if(enemyHealth <= 0)
+		{
+			gameObject.GetComponent<SpriteRenderer> ().sprite = art4;
 		}
 	}
 	
