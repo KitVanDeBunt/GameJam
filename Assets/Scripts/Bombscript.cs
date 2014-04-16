@@ -24,7 +24,7 @@ public class Bombscript : MonoBehaviour {
 	void Spawn ()
 	{
 
-		Vector3 disSpawn = new Vector3 (spawnPos2.x - Random.Range(8,24), spawnPos1.y - spawnPos1.y, 0);
+		Vector3 disSpawn = new Vector3 (spawnPos2.x - Random.Range(-5,5), spawnPos1.y - spawnPos1.y, 0);
 		Vector3 spawnPos = spawnPos1 + disSpawn;
 		int enemyIndex = Random.Range(0, enemies.Length);
 		Instantiate(enemies[enemyIndex], spawnPos, transform.rotation);

@@ -11,7 +11,7 @@ GameObject:
   - 212: {fileID: 21200000}
   - 114: {fileID: 11400000}
   m_Layer: 0
-  m_Name: Wolken
+  m_Name: Wolken3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24,8 +24,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.25742245, y: 65.7070999, z: 0}
-  m_LocalScale: {x: 4.19343615, y: 4.19343138, z: 1}
+  m_LocalPosition: {x: 14.1539288, y: 71.1773834, z: 0}
+  m_LocalScale: {x: 2.75124454, y: 2.75124335, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
 --- !u!114 &11400000
@@ -39,7 +39,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb69707e88741fa4fbc38e0509d1b673, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: -.0199999996
+  speed: -.0149999997
   offscreen: -30
   highest: 100
   lowest: 25
@@ -64,7 +64,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
-  m_Sprite: {fileID: 21300000, guid: 9982846cc6b321048a5294633d710840, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 25ce151390f44fd49997fc88fb786e53, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000
 Prefab:
