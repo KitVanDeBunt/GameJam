@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class Menu : MonoBehaviour {
-	private int xStart = 480;
+	private int xStart = 200;
 	private int yStart = -50;
 
 	public Texture startTexture;
