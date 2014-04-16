@@ -1,0 +1,202 @@
+fileFormatVersion: 2
+guid: ac5d3dba0a6acda408c2f8a5f9ce1e19
+TextureImporter:
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings:
+  - buildTarget: iPhone
+    maxTextureSize: 1024
+    textureFormat: -2
+    compressionQuality: 50
+  spriteSheet:
+    sprites:
+    - name: Explosion_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1788
+        width: 250
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Explosion_1
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 1788
+        width: 250
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Explosion_2
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 1788
+        width: 250
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Explosion_3
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 1788
+        width: 250
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Explosion_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1528
+        width: 250
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Explosion_5
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 1528
+        width: 250
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Explosion_6
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 1528
+        width: 250
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Explosion_7
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 1528
+        width: 250
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Explosion_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1268
+        width: 250
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Explosion_9
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 1268
+        width: 250
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Explosion_10
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 1268
+        width: 250
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Explosion_11
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 1268
+        width: 250
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Explosion_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1008
+        width: 250
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Explosion_13
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 1008
+        width: 250
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Explosion_14
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 1008
+        width: 250
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Explosion_15
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 1008
+        width: 250
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Explosion_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 748
+        width: 250
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+  spritePackingTag: 
+  userData: 

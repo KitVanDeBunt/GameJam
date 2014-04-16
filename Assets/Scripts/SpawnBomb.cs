@@ -1,16 +1,15 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class BombBehaviour : MonoBehaviour {
-	public Transform bomb;
+public class SpawnBomb : MonoBehaviour {
+	public Transform bombs;
 	// Use this for initialization
 	void Start () {
-	
+
 	}
 	
 	// Update is called once per frame
 	void Update () {
 	
 	}
-
 }
