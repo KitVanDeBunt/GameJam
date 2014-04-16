@@ -74,7 +74,7 @@ public class Menu : MonoBehaviour {
 			GUI.color = Color.yellow;
 			currentPlayer++;
 			if(currentPlayer>playerList.Count-1){
-				Debug.Log(currentPlayer);
+				currentPlayer = 0;
 				playerLoad = playerList[currentPlayer].player;
 			}
 		}
