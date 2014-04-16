@@ -36,7 +36,7 @@ public class Menu : MonoBehaviour {
 				Instantiate(explosion,new Vector3(xStart,yStart),this.transform.rotation);
 			}
 			if(yStart >= 1200){
-				Application.LoadLevel("GameTester");
+				Application.LoadLevel("GameTesterArnoud");
 			}
 		}
 	}

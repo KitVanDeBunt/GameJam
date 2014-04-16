@@ -49,3 +49,11 @@ TagManager:
     userID: 0
     uniqueID: 0
     locked: 0
+  - name: Berg
+    userID: 1
+    uniqueID: 1166058995
+    locked: 0
+  - name: Player
+    userID: 2
+    uniqueID: 2880002565
+    locked: 0

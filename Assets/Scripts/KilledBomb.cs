@@ -8,6 +8,7 @@ public class KilledBomb : MonoBehaviour {
 	private static float score = 0;
 	public GUIText scoreText;
 
+
 	void Awake(){
 		scoreText = GameObject.FindGameObjectWithTag ("ScoreTextUI").GetComponent<GUIText> ();
 	}
@@ -24,5 +25,6 @@ public class KilledBomb : MonoBehaviour {
 
 	void Update () {
 		scoreText.text = "SCORE = " + score;
+
 	}
 }
