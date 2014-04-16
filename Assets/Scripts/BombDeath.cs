@@ -5,5 +5,6 @@ public class BombDeath : MonoBehaviour {
 
 	public void OnDeath(){
 		Destroy (this.gameObject);
+		audio.Play ();
 	}
 }

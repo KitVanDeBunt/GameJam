@@ -38,7 +38,7 @@ GUIText:
   m_Text: HealthTextUI
   m_Anchor: 0
   m_Alignment: 0
-  m_PixelOffset: {x: 500, y: 10}
+  m_PixelOffset: {x: 200, y: 10}
   m_LineSpacing: 1
   m_TabSize: 4
   m_Font: {fileID: 12800000, guid: de58f4b98e1018b4b80167453a6ae5eb, type: 3}
