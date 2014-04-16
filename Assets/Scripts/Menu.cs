@@ -1,5 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
+
+
+[System.Serializable]
+public class PlayerHolder{
+	public GameObject player;
+	public Texture playerImg;
+}
 
 public class Menu : MonoBehaviour {
 	private float native_width = 768;
@@ -9,16 +17,24 @@ public class Menu : MonoBehaviour {
 	private int yStart = -50;
 	
 	public Texture startTexture;
+	public Texture nextTexture;
+	public Texture backTexture;
 	public GUIStyle style;
 	
 	public bool startClick;
 	public Fader fader;
 	
 	public Transform explosion;
+
+	public List<PlayerHolder> playerList;
+
+	public static int currentPlayer;
+	public static GameObject playerLoad;
 	
 	void Start () {
 		yStart = 0;
 		fader = GetComponent<Fader> ();
+		playerLoad = playerList[currentPlayer].player;
 	}
 	
 	// Update is called once per frame
@@ -51,6 +67,30 @@ public class Menu : MonoBehaviour {
 		if (GUI.Button (new Rect (xStart,yStart,300,150), startTexture)) {
 			GUI.color = Color.yellow;
 			startClick = true;
+			playerLoad = playerList[currentPlayer].player;
 		}
+
+		if (GUI.Button (new Rect (100,500,nextTexture.width/10,nextTexture.height/10), nextTexture)) {
+			GUI.color = Color.yellow;
+			currentPlayer++;
+			if(currentPlayer>playerList.Count-1){
+				Debug.Log(currentPlayer);
+				playerLoad = playerList[currentPlayer].player;
+			}
+		}
+		if (GUI.Button (new Rect (600,500,backTexture.width/10,backTexture.width/10), backTexture)) {
+			GUI.color = Color.yellow;
+			currentPlayer--;
+			if(currentPlayer<0){
+				currentPlayer = playerList.Count-1;
+				playerLoad = playerList[currentPlayer].player;
+			}
+		}
+
+		GUI.Box(new Rect(768/2-(playerList[currentPlayer].playerImg.width/2),300
+		                 ,playerList[currentPlayer].playerImg.width
+		                 ,playerList[currentPlayer].playerImg.height)
+		        ,playerList[currentPlayer].playerImg);
+		//playerList
 	}
 }

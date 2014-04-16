@@ -551,9 +551,8 @@ GameObject:
   - 4: {fileID: 400068}
   - 50: {fileID: 5000028}
   - 61: {fileID: 6100000}
-  - 114: {fileID: 11400058}
   m_Layer: 0
-  m_Name: PlayerHolder2
+  m_Name: PlayerSuit
   m_TagString: player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2225,17 +2224,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosion: {fileID: 400000, guid: ba57d52be2305134eb0c4ee44fef0dd4, type: 2}
   scoreText: {fileID: 0}
---- !u!114 &11400058
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100068}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d69f1bdd3223888498723bca576c1779, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
