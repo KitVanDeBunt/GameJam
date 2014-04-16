@@ -5,13 +5,11 @@ public class KilledBomb : MonoBehaviour {
 
 	public Transform explosion;
 
-	private string textScore;
 	private static float score = 0;
 	public GUIText scoreText;
 
 	void Awake(){
 		scoreText = GameObject.FindGameObjectWithTag ("ScoreTextUI").GetComponent<GUIText> ();
-		textScore = score.ToString ();
 	}
 
 	void OnTriggerEnter2D(Collider2D other)

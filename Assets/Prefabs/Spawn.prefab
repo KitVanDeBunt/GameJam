@@ -23,7 +23,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.46158218, y: 122.680603, z: 0}
+  m_LocalPosition: {x: 3.40900278, y: 122.583481, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -38,15 +38,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f8bd18bbd6ecf641a05780643576af0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnTime: 1.28999996
+  spawnTime: 1
   spawnDelay: 1.80999994
   spawn1: {fileID: 400000}
   spawn2: {fileID: 0}
   spawnPos1: {x: 0, y: 0, z: 0}
   spawnPos2: {x: 0, y: 0, z: 0}
   enemies:
-  - {fileID: 100000, guid: 3410b362779ca98408a2aef9bc2fe1dd, type: 2}
   - {fileID: 100000, guid: feb34002d0ea85a41a1697114276f4f3, type: 2}
+  - {fileID: 100000, guid: 3410b362779ca98408a2aef9bc2fe1dd, type: 2}
+  - {fileID: 100000, guid: 8899ea8084a096240bc6fc28f1cc622d, type: 2}
+  - {fileID: 100000, guid: cc9994a969990ed40a48716cd849582d, type: 2}
+  - {fileID: 100000, guid: 81e75964502346042a405c8736a81b69, type: 2}
+  - {fileID: 100000, guid: 6da36a4219ffa3c4cbdc211b5fbb143d, type: 2}
+  - {fileID: 100000, guid: d8673c029960ff4438e15d79e2d933ca, type: 2}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
