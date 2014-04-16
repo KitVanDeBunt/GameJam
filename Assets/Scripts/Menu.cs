@@ -28,11 +28,13 @@ public class Menu : MonoBehaviour {
 
 	public List<PlayerHolder> playerList;
 
-	public int currentPlayer;
+	public static int currentPlayer;
+	public static GameObject playerLoad;
 	
 	void Start () {
 		yStart = 0;
 		fader = GetComponent<Fader> ();
+		playerLoad = playerList[currentPlayer].player;
 	}
 	
 	// Update is called once per frame
@@ -65,13 +67,15 @@ public class Menu : MonoBehaviour {
 		if (GUI.Button (new Rect (xStart,yStart,300,150), startTexture)) {
 			GUI.color = Color.yellow;
 			startClick = true;
+			playerLoad = playerList[currentPlayer].player;
 		}
 
 		if (GUI.Button (new Rect (100,500,nextTexture.width/10,nextTexture.height/10), nextTexture)) {
 			GUI.color = Color.yellow;
 			currentPlayer++;
 			if(currentPlayer>playerList.Count-1){
-				currentPlayer = 0;
+				Debug.Log(currentPlayer);
+				playerLoad = playerList[currentPlayer].player;
 			}
 		}
 		if (GUI.Button (new Rect (600,500,backTexture.width/10,backTexture.width/10), backTexture)) {
@@ -79,6 +83,7 @@ public class Menu : MonoBehaviour {
 			currentPlayer--;
 			if(currentPlayer<0){
 				currentPlayer = playerList.Count-1;
+				playerLoad = playerList[currentPlayer].player;
 			}
 		}
 

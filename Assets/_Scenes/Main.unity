@@ -168,11 +168,10 @@ MonoBehaviour:
   fader: {fileID: 1119021996}
   explosion: {fileID: 400000, guid: d9aacac6265deb842b7f6d42b4e94508, type: 2}
   playerList:
-  - player: {fileID: 100068, guid: 8219861586ec186419b1e1f822678600, type: 2}
+  - player: {fileID: 100068, guid: dec6d7cc850bed04da936be354dd2a85, type: 2}
     playerImg: {fileID: 2800000, guid: 944c7cc2e3581514e95a864aaf7e2eaf, type: 3}
   - player: {fileID: 100032, guid: 5688721807618a84c814f5cf5cf1ea03, type: 2}
     playerImg: {fileID: 2800000, guid: 72ee7aab71fb0f74a9fe8e89f69170b5, type: 3}
-  currentPlayer: 0
 --- !u!4 &828673112
 Transform:
   m_ObjectHideFlags: 0
