@@ -9,6 +9,10 @@ TagManager:
   - astroids
   - 
   - Spawn
+<<<<<<< HEAD
+=======
+  - ScoreTextUI
+>>>>>>> b5b1f150cac22c98faba1040ed322feb5c894df3
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX
