@@ -6,6 +6,11 @@ TagManager:
   - 
   - player
   - 
+  - Spawn
+  - astroids
+  - ScoreTextUI
+  - HealthTextUI
+  - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX
   Builtin Layer 2: Ignore Raycast
@@ -42,4 +47,20 @@ TagManager:
   - name: Default
     userID: 0
     uniqueID: 0
+    locked: 0
+  - name: background
+    userID: 3
+    uniqueID: 3739719177
+    locked: 0
+  - name: city
+    userID: 2
+    uniqueID: 3037111211
+    locked: 0
+  - name: clouds
+    userID: 4
+    uniqueID: 1112564827
+    locked: 0
+  - name: player
+    userID: 1
+    uniqueID: 3393223479
     locked: 0
