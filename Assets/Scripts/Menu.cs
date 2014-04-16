@@ -23,8 +23,6 @@ public class Menu : MonoBehaviour {
 	
 	public bool startClick;
 	public Fader fader;
-	
-	public Transform explosion;
 
 	public List<PlayerHolder> playerList;
 
@@ -49,7 +47,6 @@ public class Menu : MonoBehaviour {
 			yStart += 5;
 			if(yStart >= 680){
 				Fader.fade = true;
-				Instantiate(explosion,new Vector3(xStart,yStart),this.transform.rotation);
 			}
 			if(yStart >= 1200){
 				Application.LoadLevel("GameTesterArnoud");
